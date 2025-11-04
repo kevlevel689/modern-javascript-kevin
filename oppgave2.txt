@@ -1,0 +1,52 @@
+Variabler
+Hensikten med dette oppgavesettet er at du skal få vise hvor godt du kan følgende;
+
+●	Begreper som angår variabler
+●	Datatyper
+●	Forskjellen på forskjellige definisjoner av variabler
+
+
+Oppgave 1
+Hva betyr det å deklarere en variabel?
+Skriv et eksempel på en deklarasjon av en variabel
+Å deklarere en variabel er å gi navn på en variabel som du kan bruke senere.
+Let alder;
+
+Oppgave 2
+Hva betyr det å initialisere en variabel?
+Skriv et eksempel der du intialiserer en variabel
+Å initialisere en variabel er å gi variabelen f.eks en verdi: 
+Alder = x;
+
+
+Oppgave 3
+Skriv et eksempel der du deklarerer OG initialiserer en variabel i samme setning.
+Let alder = x;
+
+Oppgave 4
+Forklar forskjellen på ‘let’ og ‘var’. Hvilken av disse bør du bruke? Forklar så godt du kan hvorfor.
+
+Let er det vi bruker nå til å deklarere variabler, og før i tiden brukte vi var, som var kort for variabler.
+
+Oppgave 5
+Forklar forskjellen på en konstant og en variabel.
+En variabel er en ting som kan bli forandret, og en konstant er noe som er konstant, og ikke blir forandret.
+
+Oppgave 6
+Skriv hvilke datatyper som finnes i javascript.
+For ordens skyld. Vi har ikke gått gjennom alle, men du burde kunne navngi minst tre typer.
+String, boolean og number.
+
+Oppgave 7
+Hva er forskjellen på ‘null’ og ‘undefined’?
+Null er hvis en variabel ikke skal ha noen verdi, og undefined er når en variabel har bare blitt deklarert, og ikke initialisert.
+a)	Gi eksempler på når en variabel kan inneholde de to verdiene.
+Let null; 
+b)	Forklar hvordan denne kunnskapen kan være nyttig i feilsøking.
+
+Oppgave 8
+Rett oppgaven i henhold til retteskjema på neste side.
+
+Oppgave 9
+Oppgaven skal lagres som PDF og levers med følgende filnavn [ditt_navn]_variabler.pdf
+ 
