@@ -1,0 +1,27 @@
+console.log() og tekst i javascript
+Dokoumentasjon: 
+https://developer.mozilla.org/en-US/docs/Web/API/Console/log			https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+
+Hensikten med denne oppgaven er at vi skal ha et sted å begynne. For å teste koden vi skal skrive i oppgavene fremover, og for å se resultatet av det vi har gjort, trenger vi å kunne bruke console.log() metoden. Akkurat nå vet du kanskje ikke hva en metode er, og det er ikke meningen heller, for det skal du lære senere, men du skal kunne bruke denne setningen og forstå hvordan du kan bruke den allikevel. 
+
+Lag følgende skript ved å utføre oppgavene i rekkefølge.
+
+Oppgave 1
+Med console.log() - skriv ut “Hello World!”;
+
+Oppgave 2
+Bruk console.log og skriv ut en setning du velger selv!
+
+Oppgave 3
+Hva er “string concatenation”, og hvordan virker det?
+string concatenation er når to strenger sammen til en lengere streng.
+det virker ved å putte to variabler, og så f.eks plusse dem sammen.
+
+Oppgave 4
+Se på bruken av console.log() under og svar på spørsmålene;
+console.log(“Geir Hilmersen er født i året” + 1979 + 42 + “ år gammel!”);
+Hva blir utskriften. Forklar! 
+Utskriften blir "Geir Hilmersen er født i året197942 år gammel!"
+Dette er fordi du bruker ikke operatøren for addisjon og subtraksjon korrekt.
+Når du plusser i en string, så blir alt regnet som en string, og ikke en blanding av number.
