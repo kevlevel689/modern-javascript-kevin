@@ -20,6 +20,10 @@ const restFunksjon = (...verdier) => {
 
 restFunksjon(1, 2, 3, 4);
 
-
-
-
+// oppgave 5
+/* 
+Pil funksjoner kan ikke bli hoistet.
+Pil funksjoner lagres i variabler.
+Pil funksjoner Returner hvis det ikke er noen krøllparenteser.
+This har ikke samme verdi i pil funksjoner som i vanlige funksjoner.
+*/
