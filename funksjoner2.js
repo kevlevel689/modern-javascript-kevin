@@ -70,3 +70,6 @@ function sjekknumberogoperator(a, b, op) {
     return;
   }
 }
+
+/* uten mening commited og pushet denne til main, så jeg må skrive denne kommentaren slik
+den oppdager at noe er nytt */
