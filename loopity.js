@@ -16,8 +16,8 @@ do {
 } while (n <= 3);
 
 
-/* En while-løkke er en løkke som looper så lenge vilkåret er korrekt.
-Den sjekker betingelsen, sjekker om det stemmer og så fortsetter til det er feil.
+/* En while-løkke er en løkke som looper så lenge vilkåret er korrekt/sann.
+Den sjekker betingelsen, sjekker om det stemmer, og så fortsetter til det er false.
 eksempel: */
 let x = 1;
 while (x <= 3) {
@@ -25,8 +25,8 @@ while (x <= 3) {
   x++;
 }
 
-/* En for...in løkke er en løkke som går gjennom verdiene i et objekt.
-Den itererer over navnene på egenskapene.
+/* En for...in løkke er en løkke som går gjennom nøkkelene og verdiene til nøkkelene i et objekt.
+Den itererer navnene (nøkkelene) og dems verdier inni objektet.
 eksempel: */
 let person = {navn: "Kevin", alder: 17};
 
@@ -34,10 +34,53 @@ for (const key in person) {
   console.log(key, person[key]);
 }
 
-// oppgave 2
 
+/* En for...of løkke er en løkke som går gjennom verdiene i et liste.
+Den itererer verdiene av itererbare objekter.
+eksempel: */
+let tiere = [10, 20, 30];
+
+for (const verdi of tiere) {
+  console.log(verdi);
+}
+
+
+// oppgave 2
+const navneliste = ['Geir', 'Espen', 'Ellen', 'Erik', 'Lars', 'Gunnar', 'Oda',
+'Nina', 'Tine', 'Henrik', 'Agnethe'];
+
+for (const navn of navneliste){
+  console.log(`${navn} er ${navn.length} bokstaver.`)
+
+// Jeg valgte for...of løkke fordi iterer verdier i en liste (array), som her er navnene.
+
+}
 // oppgave 3
+const navnelisteigjen = ['Geir', 'Espen', 'Ellen', 'Erik', 'Lars', 'Gunnar', 'Oda', 'Nina', 'Tine', 'Henrik', 'Agnethe'];
+
+const reversert = [];
+
+for (let i = navnelisteigjen.length - 1; i >= 0; i--) {
+  reversert.push(navnelisteigjen[i]);
+}
+
+console.log(reversert);
+
+/* For løkke er best fordi jeg kan lettere modifesere det enn andre løkker,
+slik at jeg kan kontrollere hvilket elementer som skal komme først. */
 
 // oppgave 4
+function reduceToOddNumber(number){
+
+if(typeof(number) == 'number'){
+
+  do {
+    number = number / 2;
+  } while (number )
+
+}
+
+}
 
 // oppgave 5
+// freebie, each...of (ville du at jeg skulle si for...in?) og while-løkke.
