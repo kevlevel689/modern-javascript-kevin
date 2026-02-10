@@ -65,16 +65,39 @@ function carFactoryMedSN(antallSeter, hestekrefter, modell, type) {
 
     genererSerienummer() {
       globalSerienummerTeller += 1;
-      this.serienummer = `CAR-${globalSerienummerTeller}`;
-      return this.serienummer;
+      return `CAR-${globalSerienummerTeller}`;
     }
   };
 
-  car.genererSerienummer(); 
-  return car; 
-}
+  car.serienummer = car.genererSerienummer();
 
+  return car;
+}
 
 const bilA = carFactoryMedSN(5, 150, "Focus", "sedan");
 const bilB = carFactoryMedSN(7, 200, "XC90", "SUV");
 console.log(bilA, bilB);
+
+
+// oppgave 5
+function makeCarFactoryWithBrand(brand) {
+    return function createCar(model, year, color) {
+
+        const info = () => `${brand} ${model} (${year}) – ${color}`;
+
+
+        const repaint = (newColor) =>
+            createCar(model, year, newColor); 
+
+        return { brand, model, year, color, info, repaint };
+    };
+}
+
+
+const fordFactory = makeCarFactoryWithBrand("Ford");
+const mustang = fordFactory("Mustang", 1969, "red");
+
+console.log(mustang.info());           
+const yellowMustang = mustang.repaint("yellow");
+console.log(yellowMustang.info());     
+
