@@ -33,7 +33,6 @@ fransk(() => console.log("Parles vous francois?"));
 
 // oppgave 2
 
-// Tre funksjoner med 1 parameter (name)
 function sayHello(name) {
     console.log(`Hello ${name}`);
 }
@@ -45,16 +44,28 @@ function loggedIn(name) {
 function loggedOut(name) {
     console.log(`${name} just logged out`);
 }
-
-// Executor: tar en string (name) og en callback-funksjon
 function executor(name, callback) {
     callback(name);
 }
 
-// Kall på de tre funksjonene i rekkefølge via executor
 executor("Kevin", sayHello);
 executor("Kevin", loggedIn);
 executor("Kevin", loggedOut);
+
+
+// b)
+
+executor("Kevin", (name) => {
+    console.log("Franskmenn liker ikke piler");
+});
+
+executor("Kevin", (name) => {
+    console.log("Piler kan være farlige, eller de kan bare vise vei!");
+});
+
+executor("Kevin", (name) => {
+    console.log("Pilgård er ikke en pil, selv om han piler fra sted til sted!");
+});
 
 // oppgave 3
 
