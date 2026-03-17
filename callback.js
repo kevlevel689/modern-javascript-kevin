@@ -26,7 +26,7 @@ const fransk = (f) => {
     f();
 };
 
-fransk(() => console.log('Amors piler treffer alltid i hjertet!'));
+fransk(() => console.log("Amors piler treffer alltid i hjertet!"));
 fransk(() => console.log("Cri’ Cri’ d’amore!"));
 fransk(() => console.log("Parles vous francois?"));
 
@@ -54,18 +54,6 @@ executor("Kevin", loggedOut);
 
 
 // b)
-
-executor("Kevin", (name) => {
-    console.log("Franskmenn liker ikke piler");
-});
-
-executor("Kevin", (name) => {
-    console.log("Piler kan være farlige, eller de kan bare vise vei!");
-});
-
-executor("Kevin", (name) => {
-    console.log("Pilgård er ikke en pil, selv om han piler fra sted til sted!");
-});
 
 // oppgave 3
 
